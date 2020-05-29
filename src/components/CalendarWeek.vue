@@ -15,13 +15,13 @@
 </template>
 
 <script>
-// import { store } from "./store/index.js";
-import CalendarDay from "./CalendarDay";
+// import { store } from "../store/index.js";
+import CalendarDay from "./CalendarDay.vue";
 export default {
   name: "CalendarWeek",
   data() {
     return {
-      sharedState: store.state,
+      sharedState: this.$store.state
     };
   },
   components: {
