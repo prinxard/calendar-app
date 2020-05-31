@@ -1,13 +1,14 @@
 <template>
-  <div id="calendar-week" class="container">
-    <div class="row row-cols-7">
+  <div id="calendar-week" class="container-fluid">
+    <div class="jumbotron">
+      <div class="row row-cols-7">
         
-          <CalendarDay
-            v-for="day in sharedState.seedData"
-            :key="day.id"
-            :day="day"
-          />
-
+        <CalendarDay class="col"
+          v-for="day in sharedState.seedData"
+          :key="day.id"
+          :day="day"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -28,8 +29,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.day-row {
-  width: 12rem;
-}
-</style>
+<style lang="scss" scoped></style>

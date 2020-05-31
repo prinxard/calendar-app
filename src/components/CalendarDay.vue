@@ -1,7 +1,7 @@
 <template>
-  <div id="calendar-day" class="container">
-    <div class="row">
-      <div class="col">
+  <div id="calendar-day" class="container-fluid">
+
+      
       <div class="card">
         <div class="card-header">
           {{ day.abbvTitle }}
@@ -10,8 +10,7 @@
           <h5 class="card-title">Special title treatment</h5>
         </div>
       </div>
-    </div>
-    </div>
+
   </div>
 </template>
 
