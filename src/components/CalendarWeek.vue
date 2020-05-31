@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <div id="calendar-week" class="container">
-      <div class="row">
-        <div>
+  <div id="calendar-week" class="container">
+    <div class="row row-cols-7">
+        
           <CalendarDay
             v-for="day in sharedState.seedData"
             :key="day.id"
             :day="day"
           />
-        </div>
-      </div>
+
     </div>
   </div>
 </template>
@@ -21,7 +19,7 @@ export default {
   name: "CalendarWeek",
   data() {
     return {
-      sharedState: this.$store.state
+      sharedState: this.$store.state,
     };
   },
   components: {
@@ -31,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- .cal{
-   border: solid red 1px;
- }
+.day-row {
+  width: 12rem;
+}
 </style>

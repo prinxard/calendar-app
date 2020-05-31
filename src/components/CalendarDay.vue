@@ -1,9 +1,16 @@
 <template>
-  <div>
-    <div id="calendar-day" class="container">
-        <div class="col-lg-3 cal">
-            {{ day.abbvTitle }}
+  <div id="calendar-day" class="container">
+    <div class="row">
+      <div class="col">
+      <div class="card">
+        <div class="card-header">
+          {{ day.abbvTitle }}
         </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </template>
