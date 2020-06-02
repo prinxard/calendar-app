@@ -7,6 +7,7 @@
   <div class="card-body">
     <input type="text" placeholder="New Event" v-model="inputEntry" required />
     <p>day of Event: <span>{{ titleOfActiveDay }}</span></p>
+    <button class="btn btn-primary mt-2">Submit</button>
   </div>
 </div>
   </div>
