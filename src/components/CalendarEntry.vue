@@ -6,7 +6,7 @@
   </div>
   <div class="card-body">
     <input type="text" placeholder="New Event" v-model="inputEntry" required />
-    <p>day of Event: <span>{{ titleOfActiveDay }}</span></p>
+    <p>day of Event: <span>{{ getActiveDay.fullTitle }}</span></p>
     <button class="btn btn-primary mt-2">Submit</button>
   </div>
 </div>
@@ -16,6 +16,7 @@
 <script>
 // import CalendarWeek from './CalendarWeek'
 // import CalendarDay from './CalendarDay'
+import {mapGetters} from 'vuex'
 export default {
   name: "CalendarEntry",
   data() {
@@ -25,9 +26,10 @@ export default {
     } 
   },
   computed: {
-    titleOfActiveDay () {
-      return this.store.getActiveDay().fullTitle;
-    }
+    // titleOfActiveDay () {
+    //   return this.store.getActiveDay().fullTitle;
+    // }
+    ...mapGetters(['getActiveDay'])
   },
   // components:{
   //   CalendarDay,
