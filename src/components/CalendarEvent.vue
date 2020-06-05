@@ -2,7 +2,6 @@
   <div>
     <div id="calendar-event" class="container">
       <div class="icons">
-          <p>{{event.details}</p>
         <i class="far fa fa-edit"></i>
         <i class="fas fa fa-trash-alt"></i>
       </div>
@@ -13,7 +12,7 @@
 <script>
 export default {
     name: 'CalendarEvent',
-    props: ['event', 'day'],
+    // props: ['event', 'day'],
 };
 </script>
 
