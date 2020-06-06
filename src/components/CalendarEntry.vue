@@ -24,9 +24,7 @@ export default {
     } 
   },
   computed: {
-    // titleOfActiveDay () {
-    //   return this.store.getActiveDay().fullTitle;
-    // }
+  
     ...mapGetters(['getActiveDay'])
   },
   
