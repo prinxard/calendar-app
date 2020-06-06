@@ -29,10 +29,7 @@ export default {
     // }
     ...mapGetters(['getActiveDay'])
   },
-  // components:{
-  //   CalendarDay,
-  //   CalendarWeek
-  // }
+  
 };
 </script>
 
