@@ -14,8 +14,6 @@
 </template>
 
 <script>
-// import CalendarWeek from './CalendarWeek'
-// import CalendarDay from './CalendarDay'
 import {mapGetters} from 'vuex'
 export default {
   name: "CalendarEntry",
