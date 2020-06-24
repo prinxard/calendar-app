@@ -1,8 +1,7 @@
 <template>
   <div id="calendar-week" class="container-fluid">
     <div class="jumbotron">
-      <div class="row row-cols-7">
-        
+      <div class="row row-cols-7"> 
         <CalendarDay class="col"
           v-for="day in sharedState.seedData"
           :key="day.id"

@@ -13,7 +13,6 @@
             :event="event"
             :day="day"
           />
-         
         </div>
       </div>
     </div>
