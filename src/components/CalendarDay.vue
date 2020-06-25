@@ -1,7 +1,7 @@
 <template>
   <div id="calendar-day" class="container-fluid">
     <div class="card">
-      <div class="card-header head-card">
+      <div class="card-header head-card"  @click="setActiveDay(day.id)">
         {{ day.abbvTitle }}
       </div>
       <div class="card-body">
@@ -20,10 +20,18 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
+// import { store } from '../store/index';
 import CalendarEvent from "./CalendarEvent.vue";
 export default {
   name: "CalendarDay",
   props: ["day"],
+  methods: {
+    // setActiveDay(dayId) {
+    //   return this.store.setActiveDay(dayId);
+    // },
+    ...mapGetters(['setActiveDay'])
+  },
   components: {
     CalendarEvent,
   },

@@ -14,11 +14,6 @@
 export default {
     name: 'CalendarEvent',
     props: ['event', 'day'],
-  //    data() {
-  //   return {
-  //     sharedState: this.$store.state,
-  //   };
-  // },
 };
 </script>
 

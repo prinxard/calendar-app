@@ -16,6 +16,11 @@ export default new Vuex.Store({
     getActiveDay(state) {
       return state.seedData.find((day) => day.active);
     },
+    setActiveDay(dayId) {
+      return state.seedData.map((dayObj) => {
+        dayObj.id === dayId ? dayObj.active = true : dayObj.active = false;
+      });
+    }
   },
 
   mutations: {},
