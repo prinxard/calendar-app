@@ -11,7 +11,6 @@
           v-model="inputEntry"
           required
         />
-        <!-- <p>day of Event: <span>{{ titleOfActiveDay }}</span></p> -->
         <p>day of Event: <span>{{ getActiveDay.fullTitle }}</span></p>
         <button class="btn btn-primary mt-2">Submit</button>
       </div>
@@ -20,19 +19,18 @@
 </template>
 
 <script>
-// import { store } from '../store/index';
 import {mapGetters} from 'vuex'
 export default {
   name: "CalendarEntry",
   data() {
     return {
       inputEntry: "",
-      error: false,
+      // error: false,
     };
   },
   computed: {
     // titleOfActiveDay(day) {
-    //   return this.store.getActiveDay(day).fullTitle;
+    //   return this.$store.getters.getActiveDay.fullTitle
     // },
     ...mapGetters(['getActiveDay'])
   },

@@ -1,11 +1,11 @@
 <template>
   <div id="calendar-day" class="container-fluid">
     <div class="card">
-      <div class="card-header head-card"  @click="setActiveDay(day.id)">
+      <div class="card-header head-card" @click="setActiveDay">
         {{ day.abbvTitle }}
       </div>
-      <div class="card-body">
-        {{ day.id }}
+      <div class="card-body"> 
+        {{ day.id }} 
         <div class="day-event">
           <CalendarEvent
             v-for="(event, index) in day.events"
@@ -26,12 +26,15 @@ import CalendarEvent from "./CalendarEvent.vue";
 export default {
   name: "CalendarDay",
   props: ["day"],
-  methods: {
-    // setActiveDay(dayId) {
-    //   return this.store.setActiveDay(dayId);
+  computed: {
+    // setDay(dayId) {
+    //   return this.$store.getters.setActiveDay;
     // },
-    ...mapGetters(['setActiveDay'])
+    ...mapGetters(['setActiveDay']),
+    
+    
   },
+ 
   components: {
     CalendarEvent,
   },

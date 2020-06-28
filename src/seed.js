@@ -8,11 +8,11 @@ export const seedData = [{
         //         edit: false
         //     },
             {
-                details: 'Netflix N\' chil ',
+                details: 'Netflix',
                 edit: false
             }
         ],
-        active: true,
+        active: false,
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ export const seedData = [{
                 edit: false
             }
         ],
-        active: false,
+        active: true,
     },
     {
         id: 3,
